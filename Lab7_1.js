@@ -1,6 +1,5 @@
 var makeArr = function(x,y) {
 	var arr = [];
-
 	if (x > y) {
 		var low = y;
 		var high = x;
@@ -11,10 +10,9 @@ var makeArr = function(x,y) {
 	}
 	for (var i = low; i <= high; i++) {
 			arr.push(i);
-
 	}
 	if (x === y) {
-		arr = "that's the same number foo!"
+		arr = "that's the same number foo!";
 	}
 	return arr
 }
