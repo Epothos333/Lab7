@@ -8,7 +8,7 @@ var grocList = [
 	price: 0.79
 	},
 	{gro: "hamburgers",
-	price: 2.99
+	price: 2.89
 	},
 	{gro: "apples",
 	price: 0.50
@@ -17,18 +17,25 @@ var grocList = [
 	price: 30.00
 	},
 	{gro: "cats",
-	price: 0.99
+	price: 29.99
 	},
 	{gro: "leopards",
-	price: 0.99
+	price: 59.99
 	}
 ]
-
 
 for (var i=0; i<grocList.length; i++) {
 	console.log(grocList[i].gro);
 	console.log("$" +grocList[i].price);
 	total += grocList[i].price;
 }
-
+total= total;
 console.log("The total Price is: " + total);
+
+// forEach method
+
+var totalz = 0
+grocList.forEach(function(element) {
+	totalz += element.price;
+	console.log(element.gro + " added to cart. Cost of this item is: $"+ element.price + " New Total: $" + totalz);
+})
