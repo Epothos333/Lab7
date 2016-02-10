@@ -29,7 +29,6 @@ for (var i=0; i<grocList.length; i++) {
 	console.log("$" +grocList[i].price);
 	total += grocList[i].price;
 }
-total= total;
 console.log("The total Price is: " + total);
 
 // forEach method
