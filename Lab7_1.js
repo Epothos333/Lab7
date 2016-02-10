@@ -1,21 +1,20 @@
 var makeArr = function(x,y) {
 	var arr = [];
 	if (x > y) {
-		var low = y;
-		var high = x;
+		for (var i=y; i<=x; i++) {
+			arr.push(i);
+		}
+	}
+	else if (y > x) {
+		for (var i=x; i<=y; i++) {
+			arr.push(i);
+		}
 	}
 	else {
-		var low = x;
-		var high = y;
-	}
-	for (var i = low; i <= high; i++) {
-			arr.push(i);
-	}
-	if (x === y) {
-		arr = "that's the same number foo!";
+		arr = "that's the same number!";
 	}
 	return arr
-}
+};
 
 console.log(makeArr(-4,2));
 console.log(makeArr(2,-4));
